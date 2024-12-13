@@ -27,7 +27,7 @@
 }
 
 .navbar-toggler span {
-    color: #00bfff;
+    color: white;
 }
 
 .navbar-nav {
@@ -151,10 +151,12 @@
         font-size: 13px;
     }
 }
+
 /* Footer */
 #footer {
     width: 100%;
-    margin-top: 150px;
+    margin-top: 0; /* Remove extra margin to avoid white space */
+    padding: 20px 0; /* Padding for some spacing */
     text-align: center;
     background: #aeed1ba9;
 }
@@ -183,4 +185,32 @@
 
 .social-links i:hover {
     background: #ffa500;
+}
+
+/* Remove the background color from the sign-up button */
+.navbar-nav .nav-item .btn-primary {
+    background: none; /* Remove background */
+    color: black; /* Keep text black */
+    border: 1px solid black; /* Optional: add border to define the button */
+    padding: 5px 20px;
+}
+
+.navbar-nav .nav-item .btn-primary:hover {
+    background: none; /* No background on hover */
+    color: #ffa500; /* Change text color on hover */
+    border: 1px solid #ffa500; /* Optional: change border color on hover */
+}
+
+/* Add gap between search box and sign-in button */
+#navbar form {
+    display: flex;
+    align-items: center;
+}
+
+#navbar form input[type="text"] {
+    margin-right: 10px; /* Add gap between search box and button */
+}
+
+#navbar form button {
+    margin-left: 10px; /* Optional: Adjust if needed */
 }
