@@ -1,0 +1,144 @@
+/* General Styling for Book Section */
+#book {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #book .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  #book .main-text h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #0073e6;
+    margin-bottom: 40px;
+  }
+  
+  #book .main-text h1 span {
+    color: #ff9900;
+  }
+  
+  /* Row Styling */
+  #book .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  #book .col-md-6 {
+    flex: 1 1 45%;
+    min-width: 300px;
+  }
+  
+  /* Image Card */
+  #book .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styling */
+  #book form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #book form .form-control {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #book form .form-control:focus {
+    border-color: #0073e6;
+    box-shadow: 0 0 8px rgba(0, 115, 230, 0.5);
+    outline: none;
+  }
+  
+  #book form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  #book form .submit {
+    width: 50%;
+    padding: 12px 20px;
+    background-color: #e68a00;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #book form .submit:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #book .row {
+      flex-direction: column;
+    }
+  
+    #book .main-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    #book .col-md-6 {
+      min-width: 100%;
+    }
+  
+    #book form {
+      padding: 20px;
+    }
+  
+    #book form .form-control {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    #book form .submit {
+      font-size: 1rem;
+    }
+  }
+  
+
+
+/* Style for the dropdown */
+#book select.form-control {
+    appearance: none; /* Removes default browser styling */
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  #book select.form-control:focus {
+    outline: none;
+    border-color: #0073e6;
+    box-shadow: 0 0 8px rgba(0, 115, 230, 0.5);
+  }
+
+  /* Smooth transition for showing/hiding additional input */
+#moreInputContainer {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #moreInput {
+    margin-top: 10px;
+  }
+  

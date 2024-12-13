@@ -1,0 +1,139 @@
+/* Packages Section Styling */
+section.packages {
+  position: relative;
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+section.packages h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+section.packages h1 span {
+  color: #0073e6;
+  font-weight: bold;
+}
+
+section.packages .row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+section.packages .card {
+  background: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px; /* Increased width */
+  height: 600px; /* Increased height */
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+section.packages .card img {
+  width: 100%; /* Makes the image cover the full width */
+  height: 100%; /* Makes the image cover the full height of the card */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+section.packages .card-body {
+  padding: 20px;
+  flex-grow: 1; /* Ensures the body takes up remaining space */
+  z-index: 3; /* Makes sure content is above the image */
+}
+
+section.packages .card-body h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+section.packages .card-body p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+section.packages .card-body .star {
+  margin: 10px 0;
+}
+
+section.packages .card-body .star i {
+  color: #ffb400;
+  margin-right: 5px;
+}
+
+section.packages .card-body h6 {
+  font-size: 1.2rem;
+  color: #0073e6;
+  margin-bottom: 20px;
+}
+
+section.packages .card-body a {
+  text-decoration: none;
+  display: inline-block;
+  background: #0073e6;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.packages .card-body a:hover {
+  background: #005bb5;
+  box-shadow: 0 4px 8px rgba(0, 115, 230, 0.3);
+}
+
+section.packages .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section.packages h1 {
+      font-size: 2rem;
+  }
+
+  section.packages .card {
+      max-width: 100%;
+      height: auto; /* Adjusts the height based on content on smaller screens */
+  }
+
+  section.packages .card img {
+      height: 300px; /* Adjust image height for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  section.packages .card-body {
+      padding: 15px;
+  }
+
+  section.packages .card-body h3 {
+      font-size: 1.2rem;
+  }
+
+  section.packages .card-body p {
+      font-size: 0.9rem;
+  }
+
+  section.packages .card-body a {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+  }
+}
